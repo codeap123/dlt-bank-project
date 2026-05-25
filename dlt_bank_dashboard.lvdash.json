@@ -1,0 +1,489 @@
+{
+  "datasets": [
+    {
+      "name": "bd3746b0",
+      "displayName": "gold_cust_acc_trans_agg",
+      "config": {
+        "version": "1.1",
+        "source": "dlt_bank_project_catalog.dlt_bank_project_schema.gold_cust_acc_trans_agg",
+        "dimensions": [
+          {
+            "name": "customer_id",
+            "expr": "source.customer_id",
+            "displayName": "Customer Id"
+          },
+          {
+            "name": "name",
+            "expr": "source.name",
+            "displayName": "Name"
+          },
+          {
+            "name": "gender",
+            "expr": "source.gender",
+            "displayName": "Gender"
+          },
+          {
+            "name": "city",
+            "expr": "source.city",
+            "displayName": "City"
+          },
+          {
+            "name": "status",
+            "expr": "source.status",
+            "displayName": "Status"
+          },
+          {
+            "name": "income_range",
+            "expr": "source.income_range",
+            "displayName": "Income Range"
+          },
+          {
+            "name": "risk_segment",
+            "expr": "source.risk_segment",
+            "displayName": "Risk Segment"
+          },
+          {
+            "name": "customer_age",
+            "expr": "source.customer_age",
+            "displayName": "Customer Age"
+          },
+          {
+            "name": "tenure_days",
+            "expr": "source.tenure_days",
+            "displayName": "Tenure Days"
+          },
+          {
+            "name": "accounts_count",
+            "expr": "source.accounts_count",
+            "displayName": "Accounts Count"
+          },
+          {
+            "name": "txn_count",
+            "expr": "source.txn_count",
+            "displayName": "Txn Count"
+          },
+          {
+            "name": "total_credits",
+            "expr": "source.total_credits",
+            "displayName": "Total Credits"
+          },
+          {
+            "name": "total_debits",
+            "expr": "source.total_debits",
+            "displayName": "Total Debits"
+          },
+          {
+            "name": "avg_txn_amount",
+            "expr": "source.avg_txn_amount",
+            "displayName": "Avg Txn Amount"
+          },
+          {
+            "name": "first_txn_date",
+            "expr": "source.first_txn_date",
+            "displayName": "First Txn Date"
+          },
+          {
+            "name": "last_txn_date",
+            "expr": "source.last_txn_date",
+            "displayName": "Last Txn Date"
+          },
+          {
+            "name": "channels_used",
+            "expr": "source.channels_used",
+            "displayName": "Channels Used"
+          }
+        ],
+        "measures": [
+          {
+            "name": "count",
+            "expr": "COUNT(*)",
+            "comment": "Represents the total number of rows in the dataset. Use this measure to count all",
+            "displayName": "Count"
+          }
+        ]
+      }
+    },
+    {
+      "name": "99d26fbb",
+      "displayName": "gold_cust_acc_trns_mv",
+      "config": {
+        "version": "1.1",
+        "source": "dlt_bank_project_catalog.dlt_bank_project_schema.gold_cust_acc_trns_mv",
+        "dimensions": [
+          {
+            "name": "customer_id",
+            "expr": "source.customer_id",
+            "displayName": "Customer Id"
+          },
+          {
+            "name": "name",
+            "expr": "source.name",
+            "displayName": "Name"
+          },
+          {
+            "name": "dob",
+            "expr": "source.dob",
+            "displayName": "Dob"
+          },
+          {
+            "name": "gender",
+            "expr": "source.gender",
+            "displayName": "Gender"
+          },
+          {
+            "name": "city",
+            "expr": "source.city",
+            "displayName": "City"
+          },
+          {
+            "name": "join_date",
+            "expr": "source.join_date",
+            "displayName": "Join Date"
+          },
+          {
+            "name": "status",
+            "expr": "source.status",
+            "displayName": "Status"
+          },
+          {
+            "name": "email",
+            "expr": "source.email",
+            "displayName": "Email"
+          },
+          {
+            "name": "phone_number",
+            "expr": "source.phone_number",
+            "displayName": "Phone Number"
+          },
+          {
+            "name": "preferred_channel",
+            "expr": "source.preferred_channel",
+            "displayName": "Preferred Channel"
+          },
+          {
+            "name": "occupation",
+            "expr": "source.occupation",
+            "displayName": "Occupation"
+          },
+          {
+            "name": "income_range",
+            "expr": "source.income_range",
+            "displayName": "Income Range"
+          },
+          {
+            "name": "risk_segment",
+            "expr": "source.risk_segment",
+            "displayName": "Risk Segment"
+          },
+          {
+            "name": "customer_age",
+            "expr": "source.customer_age",
+            "displayName": "Customer Age"
+          },
+          {
+            "name": "tenure_days",
+            "expr": "source.tenure_days",
+            "displayName": "Tenure Days"
+          },
+          {
+            "name": "dob_out_of_range_flag",
+            "expr": "source.dob_out_of_range_flag",
+            "displayName": "Dob Out Of Range Flag"
+          },
+          {
+            "name": "transformation_date",
+            "expr": "source.transformation_date",
+            "displayName": "Transformation Date"
+          },
+          {
+            "name": "account_id",
+            "expr": "source.account_id",
+            "displayName": "Account Id"
+          },
+          {
+            "name": "account_type",
+            "expr": "source.account_type",
+            "displayName": "Account Type"
+          },
+          {
+            "name": "balance",
+            "expr": "source.balance",
+            "displayName": "Balance"
+          },
+          {
+            "name": "txn_id",
+            "expr": "source.txn_id",
+            "displayName": "Txn Id"
+          },
+          {
+            "name": "txn_date",
+            "expr": "source.txn_date",
+            "displayName": "Txn Date"
+          },
+          {
+            "name": "txn_type",
+            "expr": "source.txn_type",
+            "displayName": "Txn Type"
+          },
+          {
+            "name": "txn_amount",
+            "expr": "source.txn_amount",
+            "displayName": "Txn Amount"
+          },
+          {
+            "name": "txn_channel",
+            "expr": "source.txn_channel",
+            "displayName": "Txn Channel"
+          },
+          {
+            "name": "channel_type",
+            "expr": "source.channel_type",
+            "displayName": "Channel Type"
+          },
+          {
+            "name": "txn_year",
+            "expr": "source.txn_year",
+            "displayName": "Txn Year"
+          },
+          {
+            "name": "txn_month",
+            "expr": "source.txn_month",
+            "displayName": "Txn Month"
+          },
+          {
+            "name": "txn_day",
+            "expr": "source.txn_day",
+            "displayName": "Txn Day"
+          },
+          {
+            "name": "txn_direction",
+            "expr": "source.txn_direction",
+            "displayName": "Txn Direction"
+          },
+          {
+            "name": "acc_transformation_date",
+            "expr": "source.acc_transformation_date",
+            "displayName": "Acc Transformation Date"
+          }
+        ],
+        "measures": [
+          {
+            "name": "count",
+            "expr": "COUNT(*)",
+            "comment": "Represents the total number of rows in the dataset. Use this measure to count all",
+            "displayName": "Count"
+          }
+        ]
+      }
+    }
+  ],
+  "pages": [
+    {
+      "name": "91bf17fb",
+      "displayName": "first_page",
+      "layout": [
+        {
+          "widget": {
+            "name": "c7",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "bd3746b0",
+                  "fields": [
+                    {
+                      "name": "gender",
+                      "expression": "`gender`"
+                    },
+                    {
+                      "name": "countdistinct(customer_id)",
+                      "expression": "COUNT(DISTINCT `customer_id`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "frame": {
+                "showTitle": true,
+                "title": "Customer by gender"
+              },
+              "mark": {
+                "colors": [
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 5
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 2
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 3
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 4
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 5
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 6
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 7
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 8
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 9
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 10
+                  }
+                ]
+              },
+              "widgetType": "bar",
+              "encodings": {
+                "x": {
+                  "fieldName": "gender",
+                  "scale": {
+                    "type": "categorical"
+                  }
+                },
+                "y": {
+                  "fieldName": "countdistinct(customer_id)",
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                },
+                "label": {
+                  "show": true
+                }
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 0,
+            "width": 6,
+            "height": 6
+          }
+        },
+        {
+          "widget": {
+            "name": "cc11cc8c",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "bd3746b0",
+                  "fields": [
+                    {
+                      "name": "sum(total_credits)",
+                      "expression": "SUM(`total_credits`)"
+                    },
+                    {
+                      "name": "yearly(last_txn_date)",
+                      "expression": "DATE_TRUNC(\"YEAR\", `last_txn_date`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "widgetType": "bar",
+              "encodings": {
+                "x": {
+                  "fieldName": "sum(total_credits)",
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                },
+                "y": {
+                  "fieldName": "yearly(last_txn_date)",
+                  "scale": {
+                    "type": "temporal"
+                  }
+                }
+              }
+            }
+          },
+          "position": {
+            "x": 6,
+            "y": 0,
+            "width": 6,
+            "height": 6
+          }
+        }
+      ],
+      "pageType": "PAGE_TYPE_CANVAS",
+      "layoutVersion": "GRID_V1"
+    },
+    {
+      "name": "d7dc0d79",
+      "displayName": "Global Filters",
+      "layout": [
+        {
+          "widget": {
+            "name": "3c876d09",
+            "spec": {
+              "version": 2,
+              "widgetType": "filter-single-select",
+              "encodings": {},
+              "frame": {
+                "showTitle": true
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 2
+          }
+        },
+        {
+          "widget": {
+            "name": "7fc77257",
+            "spec": {
+              "version": 2,
+              "widgetType": "filter-single-select",
+              "encodings": {},
+              "frame": {
+                "showTitle": true
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 2,
+            "width": 1,
+            "height": 2
+          }
+        }
+      ],
+      "pageType": "PAGE_TYPE_GLOBAL_FILTERS",
+      "layoutVersion": "GRID_V1"
+    }
+  ],
+  "uiSettings": {
+    "theme": {
+      "widgetHeaderAlignment": "ALIGNMENT_UNSPECIFIED"
+    },
+    "applyModeEnabled": false
+  }
+}
